@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ask Me Anything</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="bootstrap.min .css">
+
+
+</head>
+<body>
+<!-- 
+    <div id="app">
+
+        <span v-once>{{msg}}</span>
+        <div v-html="tag1"></div>
+
+        <a :href="link">Click here to tweet</a>
+
+        <h2>{{foo ? 'Its True':'its False'}}</h2>
+
+        <p>My Age is {{age}}</p>
+
+        <ul>
+            <li v-for="(user,index) in users">{{index}} !! {{user.name}} !!! {{user.email}}</li>
+        </ul>
+
+        <div v-for="(value,key,index) in user">{{index}} !! {{key}} !! {{value}}</div>
+
+        <div v-for="N in 10">{{N}}</div>
+
+        <p :class="{asfi:!club}">Dima ocs</p>
+
+        <input v-model="club" placeholder="Enter Message" type="text">
+        {{club}}
+        <input v-model="iSchecked"  type="checkbox">
+        {{iSchecked}}
+
+
+            <div class="checkbox">     
+
+                <input type="checkbox" value="anas" v-model="names">
+                <label>Anas</label>
+                <input type="checkbox" value="ahmed" v-model="names">
+                <label>Ahmed</label>
+                <input type="checkbox" value="Mehdi" v-model="names">
+                <label>Mehdi</label>
+
+                <p>Checked Names:{{names}}</p>
+
+            </div>
+
+            
+            <div class="radiobox">     
+
+                <input type="radio" value="one" v-model="radioPick">
+                <label>One</label>
+                <input type="radio" value="two" v-model="radioPick">
+                <label>Two</label>
+                <input type="radio" value="three" v-model="radioPick">
+                <label>Thre</label>
+
+                <p>The Selected Radios:{{radioPick}}</p>
+
+            </div>
+
+
+            <div class="selection">
+
+                <select v-model="selected">
+
+                    <option>Kawki</option>
+                    <option>Ourida</option>
+                    <option>Jnane Mestari</option>
+
+                </select>
+
+
+                <p>The selected one is {{selected}}</p>
+
+
+
+            </div>
+
+            //two way data binding 
+
+            <div>
+                    <select v-model="Ss">
+                        <option v-for="(option,key,index) in options" :value="option.value">{{option.text}}</option>
+                    </select>
+                    <p>{{Ss}}</p>
+            </div>
+
+
+
+            <div class="AddButton">
+            <button v-on:click="counter+=100">Add 1</button>
+            <p>You Clicked the button {{counter}} times</p>
+            </div>
+
+            <br />
+            <br />
+
+            //input handling and methods 
+
+            <div>
+                <button class="btn" v-on:click="greet('my name is anas',$event)">Click to test the methods</button>
+            </div>
+
+            <div>
+                <input type="text" v-on:keyup="keypress($event)" v-on:keypress.enter="keySubmit()">
+            </div>
+
+            <br />
+
+            // event handling 
+
+            <div>
+                <form v-on:submit="formSubmit()">
+
+                    <label>Enter Your name</label>
+                    <input  type="text" v-model="msg" placeholder="Entrer Something">
+                    <input type="submit" value="submit">
+                </form>
+
+
+                //testing the filters 
+
+
+            </div>
+
+            <br />
+
+            <div>
+
+                {{msg | Cap }}
+
+            </div>
+
+            <div>
+                {{num | double | currency }}
+            </div>
+
+            
+
+            //transitions effects 
+
+            <br/>
+            <br/>
+
+            <div>
+                <button v-on:click="show = !show">Showing</button>
+
+                <transition name="fade">
+                    <h1 v-if="show">Transition is working</h1>
+                </transition>
+
+                <transition name="slide-fade">
+                    <h1 v-if="show">hello</h1>
+                  </transition>
+
+            </div>
+
+
+            
+            //css Animations 
+            <br/>
+            <br/>
+
+            <div>
+                <button v-on:click="show1 = !show1">Showing</button>
+                <transition name="bounce">
+                    <h1 v-if="show1">Hello World</h1>
+                </transition>
+            </div>
+
+            <br/>
+            <br/>
+
+
+            //working with  watchers 
+
+            
+            <div>
+                
+                    <h2>{{fullName}}</h2>
+                    <input v-model="firstName">
+                    <input v-model="lastName">
+
+            </div>
+
+            //working with  computed 
+            
+            
+            <div>
+                <h2>{{fulladdress}}</h2>
+                <input v-model="email">
+                <input v-model="address"> 
+                <input v-model="fulladdress">
+
+            </div>
+
+
+
+
+    </div>
+ -->
+    <div id="app2">
+
+
+            <div class="container text-center">
+               <h1>Ask A Question</h1>
+               <h5>Must be a yes/no question</h5>
+                <input  class="form-control" v-model="question">
+                <br/>    <br/>
+                <h2>{{answer}}</h2>
+                <img :src="image"> 
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
